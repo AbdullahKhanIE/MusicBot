@@ -395,7 +395,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             if not Config.playlist:
                 await query.answer("No songs in playlist", show_alert=True)
             else:
-                await query.answer("trying to restart player")
+                await query.answer("trying to restart player, ENO vps restating")
                 await restart_playout()
                 await sleep(1)
             await query.message.edit_reply_markup(reply_markup=await get_buttons())
